@@ -1,7 +1,87 @@
+import 'package:epuskesmas/app/modules/edukasi_kesehatan/bindings/edukasi_kesehatan_binding.dart';
+import 'package:epuskesmas/app/modules/edukasi_kesehatan/views/edukasi_kesehatan_view.dart';
+import 'package:epuskesmas/app/modules/home/bindings/home_binding.dart';
+import 'package:epuskesmas/app/modules/home/views/home_view.dart';
+import 'package:epuskesmas/app/modules/konsultasi/bindings/konsultasi_binding.dart';
+import 'package:epuskesmas/app/modules/konsultasi/views/konsultasi_view.dart';
+import 'package:epuskesmas/app/modules/kontak_darurat/bindings/kontak_darurat_binding.dart';
+import 'package:epuskesmas/app/modules/kontak_darurat/views/kontak_darurat_view.dart';
+import 'package:epuskesmas/app/modules/obat_resep/bindings/obat_resep_binding.dart';
+import 'package:epuskesmas/app/modules/obat_resep/views/obat_resep_view.dart';
+import 'package:epuskesmas/app/modules/posyandu/bindings/posyandu_binding.dart';
+import 'package:epuskesmas/app/modules/posyandu/views/posyandu_view.dart';
+import 'package:epuskesmas/app/modules/profil_pegawai/bindings/profil_pegawai_binding.dart';
+import 'package:epuskesmas/app/modules/profil_pegawai/views/profil_pegawai_view.dart';
+import 'package:epuskesmas/app/modules/rawat_inap/bindings/rawat_inap_binding.dart';
+import 'package:epuskesmas/app/modules/rawat_inap/views/rawat_inap_view.dart';
+import 'package:epuskesmas/app/modules/riwayat_medis/bindings/riwayat_medis_binding.dart';
+import 'package:epuskesmas/app/modules/riwayat_medis/views/riwayat_medis_view.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Pastikan Flutter diinisialisasi
+  await initializeDateFormatting('id', null);
+  // runApp(const MyApp());
+
+  runApp(
+    GetMaterialApp(
+      title: "Puskesmas App",
+      initialRoute: '/',
+      getPages: [
+        GetPage(
+          name: '/',
+          page: () => const HomeView(),
+          binding: HomeBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/konsultasi',
+          page: () => const KonsultasiView(),
+          binding: KonsultasiBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/posyandu',
+          page: () => const PosyanduView(),
+          binding: PosyanduBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/obat-resep',
+          page: () => const ObatResepView(),
+          binding: ObatResepBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/riwayat-medis',
+          page: () => const RiwayatMedisView(),
+          binding: RiwayatMedisBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/edukasi-kesehatan',
+          page: () => const EdukasiKesehatanView(),
+          binding: EdukasiKesehatanBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/kontak-darurat',
+          page: () => const KontakDaruratView(),
+          binding: KontakDaruratBinding(), // Pastikan HomeBinding dibuat
+        ),
+        GetPage(
+          name: '/rawat-inap',
+          page: () => const RawatInapView(),
+          binding: RawatInapBinding(), // Pastikan RawatInapBinding dibuat
+        ),
+        GetPage(
+          name: '/profil-pegawai',
+          page: () => const ProfilPegawaiView(),
+          binding: ProfilPegawaiBinding(), // Buat binding jika diperlukan
+        ),
+        // Daftarkan rute lain di sini (/konsultasi, /obat, dll.)
+      ],
+      theme: ThemeData(
+        fontFamily: 'Roboto', // Ganti dengan font pilihan Anda
+      ),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
