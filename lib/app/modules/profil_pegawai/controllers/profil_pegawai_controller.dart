@@ -14,24 +14,34 @@ class ProfilPegawaiController extends GetxController {
   void loadDummyPegawaiData() {
     final dummyData = [
       Pegawai(
-          idPegawai: 'P001', nama: 'Dr. Siti Aminah', jabatan: 'Dokter Umum'),
+          idPegawai: '198202012010012008',
+          nama: 'Dr.Kartini',
+          jabatan: 'Dokter Umum'),
       Pegawai(
-          idPegawai: 'P002',
-          nama: 'Dr. Budi Santoso',
-          jabatan: 'Spesialis THT'),
+          idPegawai: '197408201997032003',
+          nama: 'Mariyam, Str. Keb',
+          jabatan: 'Bidan'),
       Pegawai(
-          idPegawai: 'P003',
-          nama: 'Dr. Tania Putri',
-          jabatan: 'Spesialis Anastesi'),
-      Pegawai(idPegawai: 'P004', nama: 'Suster Dian', jabatan: 'Perawat'),
-      Pegawai(idPegawai: 'P005', nama: 'Perawat Indra', jabatan: 'Perawat'),
-      Pegawai(idPegawai: 'P006', nama: 'Andi Pratama', jabatan: 'Rekam Medik'),
+          idPegawai: '197705062007011003',
+          nama: 'Kurdi, S.Kep, Ners',
+          jabatan: 'Perawat'),
+      Pegawai(idPegawai: '4', nama: 'Popy Mercury, Amd. Keb', jabatan: 'Bidan'),
       Pegawai(
-          idPegawai: 'P007', nama: 'Dr. Wahyu Kusuma', jabatan: 'Dokter Umum'),
+          idPegawai: '8',
+          nama: 'Indah Wahyu Ningsih SIP',
+          jabatan: 'Staf Non Medis'),
       Pegawai(
-          idPegawai: 'P008',
-          nama: 'Dr. Lisa Rahmawati',
-          jabatan: 'Spesialis Anak'), // Contoh lain
+          idPegawai: '199501032022021001',
+          nama: 'Dadi Hartono A.Md.Kes',
+          jabatan: 'Ahli Teknologi Laboratorium Medik'),
+      Pegawai(
+          idPegawai: '199311062023212001',
+          nama: 'Sri Sumarni',
+          jabatan: ' Perekam Medis'),
+      Pegawai(
+          idPegawai: '50',
+          nama: 'ALYA NURHANIFAH, DRG',
+          jabatan: ' Dokter Gigi'), // Contoh lain
     ];
     listPegawai.assignAll(dummyData);
     listPegawai

@@ -62,7 +62,7 @@ class HomeView extends GetView<HomeController> {
                   crossAxisSpacing: 16.0,
                   mainAxisSpacing: 16.0,
                   childAspectRatio:
-                      0.9, // Rasio aspek untuk membuat kartu lebih tinggi
+                      0.99, // Rasio aspek untuk membuat kartu lebih tinggi
                 ),
                 itemCount: controller.menuList.length,
                 itemBuilder: (context, index) {

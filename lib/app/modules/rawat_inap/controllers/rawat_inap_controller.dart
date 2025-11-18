@@ -15,49 +15,37 @@ class RawatInapController extends GetxController {
     final dummyData = [
       RuanganRawatInap(
           id: 'R01',
-          namaRuangan: 'Ruang Mawar',
+          namaRuangan: 'RAWAT INAP UMUM',
           kapasitasTotal: 6,
           terisi: 6), // Full
       RuanganRawatInap(
-          id: 'R02',
-          namaRuangan: 'Ruang Melati',
-          kapasitasTotal: 10,
-          terisi: 8),
+          id: 'R02', namaRuangan: 'UMUM', kapasitasTotal: 10, terisi: 8),
       RuanganRawatInap(
-          id: 'R03',
-          namaRuangan: 'Ruang Anggrek',
-          kapasitasTotal: 8,
-          terisi: 3),
+          id: 'R03', namaRuangan: 'Ruang GIGI', kapasitasTotal: 8, terisi: 3),
       RuanganRawatInap(
-          id: 'R04', namaRuangan: 'Ruang Tulip', kapasitasTotal: 12, terisi: 5),
+          id: 'R04', namaRuangan: 'Ruang 	KIA', kapasitasTotal: 12, terisi: 5),
       RuanganRawatInap(
           id: 'R05',
-          namaRuangan: 'Ruang Lily',
+          namaRuangan: 'Ruang KB',
           kapasitasTotal: 7,
           terisi: 7), // Full
       RuanganRawatInap(
-          id: 'R06',
-          namaRuangan: 'Ruang Jasmine',
-          kapasitasTotal: 9,
-          terisi: 2),
+          id: 'R06', namaRuangan: 'Ruang ANAK', kapasitasTotal: 9, terisi: 2),
       RuanganRawatInap(
           id: 'R07',
-          namaRuangan: 'Ruang Edelweiss',
+          namaRuangan: 'RAWAT DARURAT',
           kapasitasTotal: 5,
           terisi: 1),
       RuanganRawatInap(
           id: 'R08',
-          namaRuangan: 'Ruang Kenanga',
+          namaRuangan: 'RAWAT INAP PONED',
           kapasitasTotal: 10,
           terisi: 10), // Full
       RuanganRawatInap(
-          id: 'R09',
-          namaRuangan: 'Ruang Sakura',
-          kapasitasTotal: 11,
-          terisi: 4),
+          id: 'R09', namaRuangan: 'Ruang TB', kapasitasTotal: 11, terisi: 4),
       RuanganRawatInap(
           id: 'R10',
-          namaRuangan: 'Ruang Lavender',
+          namaRuangan: 'Ruang MATA',
           kapasitasTotal: 8,
           terisi: 0), // Kosong
     ];

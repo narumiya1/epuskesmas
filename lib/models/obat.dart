@@ -3,6 +3,7 @@ class Obat {
   final String id;
   final String namaObat;
   final String fungsi;
+  final String nama;
   final String dosis; // Contoh: "1x sehari setelah makan"
 
   Obat({
@@ -10,5 +11,6 @@ class Obat {
     required this.namaObat,
     required this.fungsi,
     required this.dosis,
+    required this.nama,
   });
 }

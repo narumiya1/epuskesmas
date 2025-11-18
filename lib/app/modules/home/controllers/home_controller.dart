@@ -8,7 +8,7 @@ class HomeController extends GetxController {
     MenuModel(
       title: 'Jadwal Dokter',
       description: '',
-      icon: Icons.medical_information, // Placeholder icon
+      icon: Icons.person_3, // Placeholder icon
       color: Colors.yellow.shade100,
       route: '/konsultasi',
     ),
@@ -22,7 +22,7 @@ class HomeController extends GetxController {
     MenuModel(
       title: 'Obat dan Resep',
       description: '',
-      icon: Icons.medical_services_outlined, // Placeholder icon
+      icon: Icons.medical_information, // Placeholder icon
       color: Colors.lightBlue.shade100,
       route: '/obat-resep',
     ),
@@ -32,6 +32,20 @@ class HomeController extends GetxController {
       icon: Icons.history_toggle_off, // Placeholder icon
       color: Colors.blue.shade100,
       route: '/riwayat-medis',
+    ),
+    MenuModel(
+      title: 'Rawat Inap',
+      description: '',
+      icon: Icons.local_hospital, // Placeholder icon
+      color: Colors.blue.shade100,
+      route: '/rawat-inap',
+    ),
+    MenuModel(
+      title: 'Profil Pegawai',
+      description: '',
+      icon: Icons.person_3_outlined, // Placeholder icon
+      color: Color.fromARGB(255, 210, 109, 235),
+      route: '/profil-pegawai',
     ),
     MenuModel(
       title: 'Edukasi Kesehatan',
@@ -46,20 +60,6 @@ class HomeController extends GetxController {
       icon: Icons.phone_in_talk_outlined, // Placeholder icon
       color: Colors.red.shade100,
       route: '/kontak-darurat',
-    ),
-    MenuModel(
-      title: 'Rawat Inap',
-      description: '',
-      icon: Icons.local_hospital_outlined, // Placeholder icon
-      color: Colors.red.shade100,
-      route: '/rawat-inap',
-    ),
-    MenuModel(
-      title: 'Profil Pegawai',
-      description: '',
-      icon: Icons.local_hospital_outlined, // Placeholder icon
-      color: Colors.red.shade100,
-      route: '/profil-pegawai',
     ),
   ];
 
